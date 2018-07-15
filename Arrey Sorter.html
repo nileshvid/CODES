@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Practice</title>
+	<link rel="image icon" type="image/icon" href="https://www.freedomjs.org/img/nodejs.png"></head>
+
+<body id="bdy">
+
+	<center>
+		<div id="fo">
+			<P>Arithmetic</P>
+		</div>
+	<div id="div1"><input maxlength="3" type="text" id="a1" ></input>
+		<input type="text" id="a2" maxlength="3" ></input>
+		<input type="text" id="a3" maxlength="3" ></input>
+		<input type="text" id="a4" maxlength="3"  ></input>
+		<input type="text" id="a5" maxlength="3" ></input>
+		<input type="text" id="a6" maxlength="3" ></input>
+		<input type="text" id="a7" maxlength="3" ></input><br>
+	<button id="b1" onclick='function2()'>Ascending</button>
+	<button id="vi" onclick='function1()'>Descending</button><br>
+	<center>
+		<p id="we"></p>
+	</center>
+	</div></center>
+	<!---------------------------------------------------------------------------------------------------------------------------<p id="ui">OUTPUT</p>-->
+
+	<script type="text/javascript">
+		function function2()
+		{
+			var a=document.getElementById("a1").value;
+			var b=document.getElementById("a2").value;
+			var c=document.getElementById("a3").value;
+			var d=document.getElementById("a4").value;
+			var e=document.getElementById("a5").value;
+			var f=document.getElementById("a6").value;
+			var g=document.getElementById("a7").value;
+			var arr=[a,b,c,d,e,f,g];
+			arr.sort(function(a,b){return a-b});
+			document.getElementById("a1").value=arr[0];
+			document.getElementById("a2").value=arr[1];
+			document.getElementById("a3").value=arr[2];
+			document.getElementById("a4").value=arr[3];
+			document.getElementById("a5").value=arr[4];
+			document.getElementById("a6").value=arr[5];
+			document.getElementById("a7").value=arr[6];
+			if(arr[0]!="" || arr[1]!="" || arr[2]!="" || arr[3]!="" || arr[4]!="" || arr[5]!="" || arr[6]!="")
+			{
+			document.getElementById("we").innerHTML="<input type='text' id='he'></input>";
+			document.getElementById("he").value="Smallest Integer is "+"[ "+arr[0]+" ]";
+		}
+		}
+		
+		function function1()
+		{
+			var a=document.getElementById("a1").value;
+			var b=document.getElementById("a2").value;
+			var c=document.getElementById("a3").value;
+			var d=document.getElementById("a4").value;
+			var e=document.getElementById("a5").value;
+			var f=document.getElementById("a6").value;
+			var g=document.getElementById("a7").value;
+			var arr=[a,b,c,d,e,f,g];
+			arr.sort(function(a,b){return b-a});
+			document.getElementById("a1").value=arr[0];
+			document.getElementById("a2").value=arr[1];
+			document.getElementById("a3").value=arr[2];
+			document.getElementById("a4").value=arr[3];
+			document.getElementById("a5").value=arr[4];
+			document.getElementById("a6").value=arr[5];
+			document.getElementById("a7").value=arr[6];
+			if(arr[0]!="" || arr[1]!="" || arr[2]!="" || arr[3]!="" || arr[4]!="" || arr[5]!="" || arr[6]!="")
+			{
+			document.getElementById("we").innerHTML="<input type='text' id='he'></input>";
+			document.getElementById("he").value="Biggest Integer is "+"[ "+arr[0]+" ]";
+
+			}
+		}
+	</script>
+
+	<style type="text/css">
+	
+	#he{
+				
+				border: none;
+				border-radius: 3.8px;
+				margin: 20px 31px 15px 10px;
+				display: inline-block;
+				outline: none;
+				padding: 15px 15px 15px 15px;
+				font-weight: bolder;
+				font-size: 20px;
+				font-family: Comic Sans MS;
+				background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+				cursor: pointer;}
+
+	#fo{
+		text-align: center;
+		margin-top: 20px;
+		font-size: 40px;
+		text-shadow: 1px 1px 2px #4E0087, 0 0 1em red, 0 0 10em green;
+		color: orange;
+		animation-name: hola;
+		animation-duration: ;
+		font-family: Comic Sans MS;
+
+	}
+		#b1,#vi{
+			background:#FF0051;
+		font-family: Comic Sans MS;
+		border: none;
+		border-radius: 3.8px;
+		margin: 20px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 15px 15px 15px 15px;
+		font-weight: bolder;
+		font-size: 20px;
+		background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+		cursor: pointer;	
+		}
+		#a1,#a2,#a3,#a4,#a5,#a6,#a7{
+		background:#FF0051;
+		font-family: Comic Sans MS;
+		border: none;
+		border-radius: 3.8px;
+		margin: 20px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 5px 5px 5px 5px;
+		font-weight: bolder;
+		width: 40px;
+		font-size: 20px;
+		background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+		cursor: pointer;
+	}
+	
+	#bdy{
+		background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+	}
+	
+	#div1{
+		background:#FF0051;
+		border: none;
+		border-radius: 10px;
+		margin: 5px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 15px 15px 15px 15px;
+		font-weight: bolder;
+		font-size: 20px;
+		background: linear-gradient(to left,#FF005D,#4E0087,#C12F00);
+		cursor: pointer;
+	}
+	
+	#vi:hover,#b1:hover,#a1:hover,#a2:hover,#a3:hover,#a4:hover,#a5:hover,#a6:hover,#a7:hover{
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19),0 8px 16px 0 rgba(0,0,0,0.2);
+	
+	}
+
+</style>
+</body>
+</html>
