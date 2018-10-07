@@ -13,7 +13,7 @@
 		<div id="fo">
 			<P>Napito Calculator</P>
 		</div>
-	<div id="div1"><input id="rr" cols="40" rows="5" readonly="readonly"></input>
+	<div id="div1"><input id="rr" cols="4" rows="5" maxlength="14" ></input>
 	<button id="bs" onclick='function1()'>Process-Computing</button><br>
 	<input id="mm" value="0" cols="40" readonly="readonly" rows=""></input><br>
 	<button id="b" onclick="bl()">&nbsp(</button>
@@ -147,8 +147,12 @@
 			ass.style.background="linear-gradient(to left,#E80C30,#FF760D,#0014FF)";
 			var answer=document.getElementById("rr");
 			ans=Math.floor(+eval(answer.value));
+			if(!ans){
+				ass.style.textAlign="right";
+			    ass.value="Error !";}	
+			else{
 			ass.style.textAlign="right";
-			ass.value=ans;
+			ass.value=ans;}
 		}
 	
 	</script>
