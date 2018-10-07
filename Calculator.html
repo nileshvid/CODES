@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Napito Calculator</title>
+	<link rel="image icon" type="image/icon" href="https://www.freedomjs.org/img/nodejs.png"></head>
+
+<body id="bdy">
+
+	<center>
+		<div id="fo">
+			<P>Napito Calculator</P>
+		</div>
+	<div id="div1"><input id="rr" cols="40" rows="5" readonly="readonly"></input>
+	<button id="bs" onclick='function1()'>Process-Computing</button><br>
+	<input id="mm" value="0" cols="40" readonly="readonly" rows=""></input><br>
+	<button id="b" onclick="bl()">&nbsp(</button>
+	<button id="b" onclick="br()">)&nbsp</button>
+	<button id="b" onclick="bk()">B</button>
+	<button id="b" onclick="fcls()">C</button><br>
+	<button id="b" onclick='f(7)'>7</button>
+	<button id="b" onclick='f(8)'>8</button>
+	<button id="b" onclick='f(9)'>9</button>
+	<button id="b" onclick="fo('+')">+</button><br>
+	<button id="b" onclick='f(4)'>4</button>
+	<button id="b" onclick='f(5)'>5</button>
+	<button id="b" onclick='f(6)'>6</button>
+	<button id="b" onclick="fo('-')">&nbsp-</button><br>
+	<button id="b" onclick='f(1)'>1</button>
+	<button id="b" onclick='f(2)'>2</button>
+	<button id="b" onclick='f(3)'>3</button>
+	<button id="b" onclick="fo('/')">&nbsp/</button><br>
+	<button id="b" onclick="fo('.')">.&nbsp</button>
+	<button id="b" onclick='f(0)'>0</button>
+	<button id="b" onclick='pr()'>%</button>
+	<button id="b" onclick="fo('*')">x</button>
+
+	</div></center>
+	<!---------------------------------------------------------------------------------------------------------------------------<p id="ui">OUTPUT</p>-->
+	<center>
+		<footer><div style="margin-left: 0px; border-radius: 15px; border-style: inherit; font-size: 18px; font-weight: bolder;	 margin-top:50px;margin-bottom: 0px; border: 0 solid; max-height: 50px; max-width: 100%; background: rgba(0,0,0,0.4	);">
+			<p style="position: relative; padding-top: 10px; padding-bottom: 10px;"><code>By Nishant Maheshwari , mnsihant22@gmail.com</code></p>
+		</div></footer>
+	</center>
+	<script type="text/javascript">
+		function fcls(){
+			var by=document.getElementById("rr")
+			by.value="";
+			document.getElementById("mm").style.background="linear-gradient(to left,#009AFF,#007BA6,#009EA0)";
+			var by=document.getElementById("mm")
+			by.value="0";
+		}
+	
+		function f(num)
+		{
+
+			var val=document.getElementById("rr");
+
+				switch(num)
+				{
+					case 1:val.value+='1';
+					break;
+					
+					case 2:val.value+='2';
+					break;
+					
+					case 3:val.value+='3';
+					break;
+					
+					case 4:val.value+='4';
+					break;
+
+					case 5:val.value+='5';
+					break;
+
+					case 6:val.value+='6';
+					break;
+
+					case 7:val.value+='7';
+					break;
+
+					case 8:val.value+='8';
+					break;
+
+					case 9:val.value+='9';
+					break;
+
+					case 0:val.value+='0';
+					break;
+				}
+		}
+	
+		function fo(operand)
+		{
+			var val=document.getElementById("rr");
+
+				switch(operand)
+				{
+					case '+':val.value+='+';
+					break;
+
+					case '-':val.value+='-';
+					break;
+
+					case '*':val.value+='*';
+					break;
+
+					case '/':val.value+='/';
+					break;
+
+					case '.':val.value+='.';
+					break;
+				}
+		}
+
+		function bl()
+		{
+			document.getElementById("rr").value+='(';	
+		}
+
+		function br()
+		{
+			document.getElementById("rr").value+=')';
+		}
+
+		function pr()
+		{
+			document.getElementById("rr").value+='%';
+		}
+
+		function bk()
+		{
+			var chr=document.getElementById('rr');
+			var x=chr.value;
+			if(x.length>0)
+			{
+				x=x.substring(0,x.length-1);
+				chr.value=x;
+			}
+		}
+
+		function function1()
+		{
+			var ass=document.getElementById("mm");
+			ass.style["box-shadow"]="0 0 1em rgba(0,0,0,0.5), 0 0 17em rgba(0,0,0,0.5) ";
+			ass.style.background="linear-gradient(to left,#E80C30,#FF760D,#0014FF)";
+			var answer=document.getElementById("rr");
+			ans=Math.floor(+eval(answer.value));
+			ass.style.textAlign="right";
+			ass.value=ans;
+		}
+	
+	</script>
+
+	<style type="text/css">
+
+	#fo{
+		position: relative;
+		text-align: center;
+		margin-top: 20px;
+		font-size: 50px;
+		text-shadow: 1px 5px 2px #4E0087, 0 0 1em red, 0 0 10em green;
+		color: orange;
+		font-weight: bold;
+		animation-name: hola;
+		animation-duration: 2s;
+		font-family: DejaVu Sans Mono, monospace;
+    animation-iteration-count: infinite;
+	}
+	@keyframes hola{
+		from{
+			color: #FF4D0D;
+		}
+		to{
+			color: cyan;
+		}
+	}
+	#b{
+		background:#FF0051;
+		border: none;
+		border-radius: 3.8px;
+		margin: 20px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 15px 15px 15px 15px;
+		font-weight: bolder;
+		font-size: 20px;
+		background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+		cursor: pointer;
+	}
+		#bs,#rr{
+		background:#FF0051;
+		font-family: Comic Sans MS;
+		border: none;
+		border-radius: 3.8px;
+		margin: 20px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 15px 15px 15px 15px;
+		font-weight: bolder;
+		font-size: 20px;
+		background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+		cursor: pointer;
+	}
+	
+	#mm{
+		font-family: Comic Sans MS;
+		border: none;
+		border-radius: 3.8px;
+		margin: 20px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 15px 15px 15px 15px;
+		font-weight: bolder;
+		font-size: 20px;
+		cursor: pointer;
+		background: linear-gradient(to left,#E80C30,#FF760D,#0014FF);
+	}
+	#bdy{
+		background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+	}
+	
+	#div1{
+		background:#FF0051;
+		border: none;
+		position: relative;
+		border-radius: 10px;
+		margin: 5px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 15px 15px 15px 15px;
+		font-weight: bolder;
+		font-size: 20px;
+		background: linear-gradient(to left,#FF005D,#4E0087,#FF240D	);
+		cursor: pointer;
+		animation-name: set;
+		animation-duration: 2s;
+		font-family: DejaVu Sans Mono, monospace;
+        animation-iteration-count: infinite;
+	}
+	
+	@keyframes set{
+		from{
+			background: linear-gradient(to left,#FF005D,#4E0087,#FF240D);
+		}
+		to{
+			background: linear-gradient(to left,#FF240D,#4E0087,#FF005D);
+		}
+	}
+
+	#b:hover,#bs:hover,#rr:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19),0 8px 16px 0 rgba(0,0,0,0.2);
+	
+	}
+
+</style>
+</body>
+</html>
