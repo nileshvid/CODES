@@ -1,0 +1,14 @@
+body{
+    color: #FF6800;
+    background-color: #400600;
+    margin-top: 0.5cm;
+    margin-bottom: 1cm ;
+    margin-left: 1cm;
+    margin-right: 1cm ;
+}
+h4{
+    font: italic small-caps normal 34px arial,sans-serif;
+}
+.class{
+    speak:normal;
+}

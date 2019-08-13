@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<link rel="image icon" type="image/icon" href="https://www.freedomjs.org/img/nodejs.png">
+</head>
+<body id="bdy" onclick="op()">
+	<center><div id="txt">
+		<p id="ptxt"><b>Color Configuration</b></p>
+	</div></center>
+	<!--<div id="main">-->
+	<div id="d1" ondblclick="dp()">
+	<button id="re" onclick='red()'>Color-Org</button>
+	<button id="vo" onclick="vo()">Color-Obj</button>
+	<button id="pi" onclick="pi()">Color-Aut</button><br>
+	<button id="no" style="background: linear-gradient(to left,#62D7D2,#0005D7,#E87800);" onclick="no()">Color-Birver</button>
+	</div>
+	<div id="d2" onclick="io()" style="background:linear-gradient(to left,#009AFF,#C200FF,#007BA6,#009EA0,#FF0D77)">	
+		<button style="margin: 37px 50px 100px 160px; font-size: 40px; padding:40px 90px 40px 90px; background: linear-gradient(to left,#DE3C00,#8A0E4E);"  id="no" onclick='nu()'>Window('Exit')</button>
+	</div>
+<!--</div>-->
+
+	<script type="text/javascript">
+		function dp()
+		{
+			document.getElementById("d2").style.background="linear-gradient(to top,#FF00AB,#FFAA00,#A60DFF,#0064FF,#FF240D,#FF7100,#00FF7F,#FF0638,#009AFF,#007BA6)";
+		}
+		function red()
+		{
+			document.getElementById("bdy").style.background="linear-gradient(to left,#8F00FF,#FF8100,#8A0E4E)";
+		}
+		function vo()
+		{
+			document.getElementById("bdy").style.background="linear-gradient(to bottom,#00FF61,#FF00AB,#00FF61)";
+		}
+		function pi()
+		{
+			document.getElementById("bdy").style.background="linear-gradient(to top,#FF00AB,#FFAA00,#A60DFF,#0064FF,#FF240D)";
+		}
+		function no()
+		{
+			document.getElementById("bdy").style.background="linear-gradient(to right,#c0c0c0,#FFAA00,#FF0081,#FF300D)";
+			document.getElementById("d1").style.background="linear-gradient(to left,#62D7D2,#0005D7,#E87800,#FF0638,#009AFF,#007BA6)";
+		}
+		function io()
+		{
+			document.getElementById("bdy").style.background="linear-gradient(to left,#DE3C00,#8A0E4E)";
+			//document.getElementById("d2").style.background="linear-gradient(to left,#009AFF,#C200FF,#007BA6,#009EA0,#FF0D77)";
+		}
+		function nu()
+		{
+			if(window.confirm("Do you Surely wan't to Exit this Windows\nYes or No ?"))
+			{
+				window.close();	
+			}
+			else
+			{
+				window.alert("You Cancelled Termination");
+				document.location.reload(true);
+			}
+			
+		}
+	</script>
+
+	<style type="text/css">
+		#no
+		{
+		    background:#FF0051;
+		    border: none;
+		    border-radius: 5px;
+		    margin-left: 125px ;
+		    margin-right:70px ;
+		    margin-top: 20px; 
+		    display: inline-block;
+		    outline: none;
+		    padding: 20px 50px 20px 50px;
+		    font-weight: bolder;
+		    font-size: 20px;
+		    cursor: pointer;
+		}
+	#d1,#d2{
+		margin:20px auto auto auto;
+		border: none;
+		background:#FF002C;
+		width: 500px;                                          
+		height: 200px;
+		background: linear-gradient(to left,#FF7100,#00FF7F,#FF0638);
+		padding: 20px 20px 20px 20px;
+		border-radius:30px; 
+	}
+	#main{
+		height: 500px;
+		width: 1300px;
+		border: 2px solid red;
+	}
+	#re,#vo,#pi{
+		background:#FF0051;
+		border: none;
+		border-radius: 3.8px;
+		margin: 20px 31px 15px 10px;
+		display: inline-block;
+		outline: none;
+		padding: 15px 15px 15px 15px;
+		font-weight: bolder;
+		font-size: 20px;
+		background: linear-gradient(to left,#009AFF,#007BA6,#009EA0);
+		cursor: pointer;
+	}
+	#no:hover,#re:hover,#vo:hover,#pi:hover,#d1:hover,#d2:hover{
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19),0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	#bdy
+	{
+		background: linear-gradient(to left,#DE3C00,#8A0E4E);
+	}
+	#txt
+	{
+		font-family: Comic Sans MS;
+		font-size: 40px;
+		color:#00016B;
+		text-shadow: 1px 1px 2px #FF005D, 0 0 1em blue, 0 0 0.2em #FF005D;/*#0064FF,#FF240D,#FF7100,#00FF7F*/
+	}
+</style>
+</body>
+</html>		

@@ -1,0 +1,1208 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Web development project ideas from the experts  |  Simple Steps Code</title>
+
+<style type="text/css">
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v7/1TiHc9yag0wq3lDO9cw0vpBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(https://fonts.gstatic.com/s/nunito/v7/1TiHc9yag0wq3lDO9cw0vrO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+
+/***********************************************************
+GENERAL
+***********************************************************/
+body{
+	margin: 0px;
+	font-size: 110%;
+	font-family: 'Nunito', sans-serif;
+	color:#333;
+	background: #fff;
+	line-height: 1.5;
+	font-weight: 100;
+}
+
+img{ border: 0px; }
+
+a{ text-decoration: none; }
+
+b{ font-weight: 700; }
+
+button{
+	border:0px;
+	cursor: pointer;
+}
+
+h1{
+	margin: 0px auto;
+	padding: 40px 0px 20px;
+	font-weight: 100;
+	font-size: 2.0em;
+	max-width: 800px;
+	line-height: 1.3;
+}
+
+h1.homeh1{
+	margin: 0px auto;
+	padding: 0px 0px 40px;
+	font-size: 35px;
+	max-width: 920px;
+}
+
+h2{
+	line-height: 1.1;
+    font-weight: 100;
+    margin: 0px;
+    font-size: 2.3em;
+    padding: 0px 0px 20px;
+    color: #678;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 30px 0px 0px;
+    font-weight: 100;
+}
+
+p{
+	margin: 15px 0px;
+	line-height: 1.5;
+	font-weight: 100;
+}
+
+ol li{
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+p a, li a{
+	color: #09d;
+}
+
+p a:hover, li a:hover{
+	color: #0be;
+	text-decoration: underline;
+}
+
+ul li{ margin-bottom: 20px; }
+
+blockquote{
+	background: #f9f9f9;
+	border-left: 3px solid #0ad;
+	margin: 10px 0px;
+	padding: 15px 20px;
+	font-size: 90%;
+}
+
+blockquote p:first-of-type{
+	margin-top: 0px;
+}
+
+blockquote p:last-of-type{
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+/***********************************************************
+MENUBAR
+***********************************************************/
+
+#menubar{
+	padding: 20px;
+	font-weight: 100;
+	font-size: 18px;
+	line-height: 1.3;
+	position: relative;
+}
+
+#menubar a{
+	text-decoration: none;
+	color: #555;
+}
+
+#menubar span{
+	vertical-align: middle;
+}
+
+
+
+/***********************************************************
+NAVIGATION
+***********************************************************/
+
+#hamburger{
+	float: right;
+	width: 36px;
+	cursor: pointer;
+	margin-top: 6px;
+}
+#hamburger div:first-child{
+	margin-top: 4px;
+}
+#hamburger div{
+	margin-top: 5px;
+	width: 100%;
+	height: 3px;
+	background: #555;
+	border-radius: 3px;
+}
+
+#topnav{
+	padding-top: 20px;
+}
+
+#topnav a{
+	display: block;
+	padding: 15px;
+	font-size: 18px;
+	border-top: 1px solid #eee;
+}
+
+#topnav a:hover{
+	/*background: #0c7;*/
+	background: #229CCB;
+	color: #fff;
+}
+
+.open{ display: block; }
+.closed{ display: none; }
+
+
+
+
+/***********************************************************
+MASTHEAD
+***********************************************************/
+
+.masthead{
+	/*background: #269;*/
+	background: #229CCB;
+	text-align: center;
+	color: #fff;
+	padding: 140px 20px;
+}
+
+.mastheadhome{
+	background: #28b;
+	text-align: center;
+	color: #fff;
+	padding: 50px 20px;
+}
+
+.homeformtext{
+	font-size:20px;
+	max-width: 700px;
+	margin: auto;
+	font-weight: 100;
+}
+
+.homeform{
+	max-width: 700px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.homeform input{
+	padding: 15px;
+	border: 1px solid #aaa;
+	font-size: 20px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	box-shadow: 1px 1px 3px 0px #ddd inset;
+	border-radius: 3px;
+	width: 100%;
+	display: block;
+}
+
+.homeform button{
+	padding: 15px 10px;
+	border: 0px;
+	font-size: 20px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	background: #0c7;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.homeform button:hover{
+	background: #0d8;
+}
+
+
+
+
+
+/***********************************************************
+PLAIN CONTENT
+***********************************************************/
+
+.plaincontent{
+	padding: 30px 20px;
+	font-size: 1em;
+	font-weight: 100;
+	line-height: 1.5;
+}
+
+.plaincontent h2{
+	margin: 0px;
+	padding: 80px 0px 20px;
+}
+
+.plaincontent p{
+	margin: 0px;
+	padding: 0px 0px 20px;
+}
+
+.plaincontent ul{
+	margin: 0px;
+	padding: 0px 0px 20px 30px;
+}
+
+.plaincontent a{
+	color: #09d;
+}
+
+.plaincontent a:hover{
+	color: #0be;
+}
+
+
+
+
+
+
+/***********************************************************
+TUTORIAL CONTENT
+***********************************************************/
+
+.demobutton{
+	background: #229CCB;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+.demobutton:hover{ background: #3ad; }
+
+.firstcontentline{
+	font-size: 1.3em;
+	font-weight: 100;
+	line-height: 1.5;
+}
+.showcasetitle{
+	padding: 50px 0px 0px;
+	font-weight: 100;
+	font-size: 1.8em;
+	color: #89a;
+}
+
+.showcase{
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.contentwidth{
+	max-width: 700px;
+	margin: auto;
+}
+
+.content{
+	padding: 20px;
+}
+
+.intro{
+	padding: 20px 20px 70px;
+}
+.intro a{
+	color: #4A9CC7;
+}
+.intro a:hover{
+	text-decoration: underline;
+}
+
+.stepscontainer{
+	background:#0ad;
+	padding:50px 0px;
+}
+
+.stepbox{
+	background:#fff;
+	padding:30px 20px;
+	border-radius:5px;
+	margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+/***********************************************************
+CATEGORY GRID STYLES
+***********************************************************/
+
+.gridbg{background:#F1F4F7; padding:30px 10px; text-align:center;}
+
+.gridcontainer{ max-width:650px; display: inline-block;}
+
+.gridbox{
+	background: #fff;
+	border-top: 5px solid #229CCB;
+	padding: 40px;
+	margin: 30px 10px;
+	font-size: 30px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.gridbox a{
+	color: #333;
+	text-decoration: none;
+}
+.gridbox a:hover{ color: #4bd; text-decoration:none; }
+
+.tags{
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.tags a{
+	color: #3ac;
+}
+
+
+
+
+
+
+/***********************************************************
+CODE
+***********************************************************/
+
+.codespan{
+	background: #333;
+	color: #fff;
+	font-family: courier;
+}
+
+code{
+	font-size: 20px;
+}
+
+.resultcontainer{
+	background: #444;
+	color: #fff;
+	display: block;
+	padding: 20px;
+	/*word-wrap: break-word;*/
+	overflow: scroll;
+	white-space: nowrap;
+	/*font-size: 20px;*/
+}
+.resultcontainer{ text-align: center; white-space: normal;}
+
+
+.tag{ color: gold; }
+
+.cssclass{ color: #aef; }
+
+.cssproperty{ color: pink; }
+
+.csscomment { color: #6f6; }
+
+.indent{ padding-left: 40px; }
+
+.beforeparentheses{ color:#f6a; }
+
+
+
+
+
+
+
+
+/***********************************************************
+EMAIL FORM
+***********************************************************/
+
+.signupsection{
+	padding: 10px 20px 40px;
+}
+
+.enjoyedthis{
+	font-size: 2em;
+	padding: 60px 0px 20px;
+}
+
+.signupform{
+	background: #fdf7f1;
+	padding: 30px;
+	border-radius: 5px;
+	color: #333;
+	vertical-align: middle;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.signupcopy{
+	padding-bottom: 10px;
+}
+
+.gettutorials{
+	font-weight: 100;
+	font-size: 30px; 
+	padding: 0px 0px 20px;
+	line-height: 1.2;
+}
+
+.bluechecks{
+	list-style: none;
+	padding: 0px;
+	padding-left: 15px;
+	margin: 0px;
+	font-size: 0.95em;
+	font-weight: 100;
+}
+.bluechecks span{ color:#19b; }
+
+
+.zerofont{ font-size: 0px; }
+
+.signupform input{
+	padding: 15px;
+	border: 1px solid #aaa;
+	font-size: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 10px;
+	box-shadow: 1px 1px 3px 0px #ddd inset;
+	border-radius: 3px;
+}
+
+
+.signupbutton{
+	font-family: nunito, sans-serif;
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	background: #15BBDD;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 3px;
+	border: 0px;
+	width: 100%;
+	box-sizing: border-box;
+}
+a.signupbutton{
+	margin-bottom: 40px;
+}
+
+.signupbutton:hover{
+	background: #2ce;
+}
+
+.nospam{
+	margin-top: 10px;
+	font-size: 16px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+/***********************************************************
+BOTTOM NAV
+***********************************************************/
+
+.bottom_nav_container{
+	background-color: #F1F4F7;
+	padding: 20px;
+	text-align: center;
+}
+
+.bottom_nav_container a{
+	text-decoration: none;
+	background-color: #4A9CC7;
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	border-radius: 3px;
+}
+.bottom_nav_container a:hover{
+	text-decoration: none;
+	background-color: #5ad;
+	color: #fff;
+}
+
+
+
+
+
+/***********************************************************
+FOOTER
+***********************************************************/
+
+.copyright{
+	background: #333;
+	color: #fff;
+	padding: 30px 10px;
+	text-align: center;
+	font-size: 17px;
+}
+
+
+
+
+
+
+
+
+/************************************************************
+first breakpoint
+************************************************************/
+@media (min-width:700px) {
+	body{
+		font-size: 134%;
+	}
+
+	
+	/* begin navigation styles */
+	
+	#hamburger{ display: none; }
+
+	#topnav{
+		padding: 0px;
+		position: absolute;
+		top: 13px;
+		right: 30px;
+	}
+
+	.open, .closed{ display: inline-block; }
+
+	#topnav a{
+		display: inline-block;
+		padding: 15px;
+		border-radius: 5px;
+		font-size: 18px;
+		border-top: 0px none;
+		margin: 0px 15px;
+		vertical-align: top;
+	}
+
+	.separator{
+		display: inline-block;
+		height: 20px;
+		width: 1px;
+		padding: 15px 0px;
+		background: #eee;
+		vertical-align: top;
+	}
+
+	/* end navigation styles */
+
+
+
+	.mastheadhome{
+		padding: 150px 20px;
+		background-image:url('img/macbgdark.png');
+		background-size: cover;
+	}
+
+	h1.homeh1{
+		font-size: 49px;
+	}
+
+	.homeform input{
+		width: 28%;
+		display: inline;
+	}
+
+	.homeform button{
+		width: 33%;
+		display: inline;
+	}
+
+	.stepbox{ padding:80px 100px; }
+
+	.signupform input{
+		width: 49%;
+		display:inline-block;
+	}
+
+	.signupform input:first-child{
+		margin-right: 2%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/************************************************************
+TOP OPT IN BAR
+************************************************************/
+#top_opt_in{
+	display: none;
+	background: #396;
+	color: #fff;
+	font-size: 16px;
+	padding: 6px;
+	text-align: center;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 100;
+
+	-webkit-transition: transform .2s;
+	transition: transform .2s;
+	
+	-ms-transform: translateY(-40px);
+	-webkit-transform: translateY(-40px);
+	transform: translateY(-40px);
+}
+#top_opt_in a{
+	display: inline-block;
+	color: #fff;
+	background: #444;
+	padding: 1px 15px;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+#top_opt_in a:hover{
+	background: #555;
+}
+#menubar{
+	-webkit-transition: margin-top .2s;
+	transition: margin-top .2s;
+}
+
+@media (min-width:920px) {
+	#top_opt_in{
+		display: block;
+	}
+
+	#menubar.top_promo{
+		margin-top: 36px;
+	}
+
+}
+
+
+
+
+
+/************************************************************
+CODE SAMPLES
+************************************************************/
+pre code{
+	font-size: 16px;
+}
+
+
+
+
+/************************************************************
+IMAGES IN POSTS
+************************************************************/
+.img_float_right{
+	max-width: 40%;
+	float: right;
+	padding: 20px;
+}
+.img_feature_float_right{
+	max-width: 35%;
+	float: right;
+	padding: 10px 5%;
+}
+#y{
+	border-radius: 34px solid black;
+}
+
+
+
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="/code_formatting/prism.css">
+
+</head>
+<body>
+
+<!-- TOP OPT-IN BAR -->
+<!--<div id="top_opt_in">
+	Get the actual steps I used to get hired as a front-end web developer at a well-known company
+	<a href="/opt-in/">Click here</a>
+</div>-->
+
+
+<div id="menubar">
+	<div id="hamburger">
+		<div></div><div></div><div></div>
+	</div>
+
+	<!-- <a href="/">Simple Steps Code</a> -->
+	<a href="/">
+		<svg height="40" width="40" style="vertical-align: middle; padding: 0px 6px 0px 0px;" viewBox="0 0 10 10" xmlns="">
+			<circle cx="5" cy="5" r="4.4" style="stroke-width: 0.5; fill: none; stroke: #555;"></circle>
+			<polyline points="3.5,6.3 5,6.3 5,3.7 6.5,3.7" style="stroke-width: 0.8; stroke-linejoin: round; stroke-linecap: round; fill: none; stroke: #555;"></polyline>
+		</svg>
+		<span id="y">
+			Tech Soft
+		</span>
+		<span>
+			By Nishant Maheshwari
+		</span>
+	</a>
+	
+	<div id="topnav" class="closed">
+		<a href="/category/tutorials">Tutorials</a>
+		<div class="separator"></div>
+		<a href="/category/blog">Blog</a>
+	</div>
+</div>
+<section id="content" role="main">
+<div class="masthead">
+	<h1>Web development project ideas from the experts</h1>
+</div>
+<div class="intro contentwidth">
+	<div class="showcasetitle">
+		What to expect
+	</div>
+	<div class="firstcontentline">
+		<p>It can be tough to think of project ideas.</p>
+	</div>
+	<p>In fact, this is one of the most common frustrations I hear when I talk to people who are learning to code.</p>
+	<p>To help everyone out, I decided to ask the experts what sorts of projects they would recommend.</p>
+	<p>Here's who I asked:</p>
+	<ul>
+		<li><a href="#coyier">Chris Coyier (CSS-Tricks and CodePen)</a></li>
+		<li><a href="#hibbard">Jim Hibbard (JavaScript Editor at Sitepoint)</a></li>
+		<li><a href="#soueidan">Sara Soueidan (Dev of the Year and writer at Codrops)</a></li>
+		<li><a href="#moss">Ben Moss (Editor at Webdesigner Depot)</a></li>
+		<li><a href="#bradford">Laurence Bradford (Learn to Code With Me)</a></li>
+		<li><a href="#phinney">Parker Phinney (Interview Cake)</a></li>
+		<li><a href="#liew">Zell Liew (ZellWK.com)</a></li>
+	</ul>
+	
+	<p>For each person on this list, I'll quote their suggestion and then follow it up with commentary (difficulty level, reasons the suggestion is effective, etc).</p>
+
+	<p>Huge thanks to everyone who answered!</p>
+
+</div>
+
+<div class="stepscontainer">
+
+
+
+
+
+	<div class="contentwidth stepbox">
+
+		<h2 id="coyier">Chris Coyier</h2>
+		
+		<p class="bio">
+			Founder: <a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a>, Co-Founder: <a href="http://codepen.io/" target="_blank" rel="noopener">CodePen</a>, Co-Host: <a href="http://shoptalkshow.com/" target="_blank" rel="noopener">ShopTalk</a>, Author: A clear, helpful book called <a href="https://abookapart.com/products/practical-svg" target="_blank" rel="noopener">Practical SVG</a>
+		</p>
+
+		<h3>Project ideas from Chris</h3>
+		<blockquote>
+			I like the idea of copying a website as closely as you can. You'd only do this for practice, never for something you'd present as your own work. But a lot can be learned from emulating something you already like.
+		</blockquote>
+
+		<h3>Commentary</h3>
+
+		<p>What I like about Chris's suggestion:</p>
+		<ol>
+			<li>It can be whatever difficulty level you want.</li>
+			<li>You won't run out of projects until you run out of sites on the entire internet.</li>
+			<li>It deals with the importance of giving credit where credit is due.</li>
+		</ol>
+
+	</div>
+
+
+
+
+
+	<div class="contentwidth stepbox">
+		<h2 id="hibbard">Jim Hibbard</h2>
+
+		<p class="bio">
+			JavaScript Editor at <a href="https://www.sitepoint.com/javascript/" target="_blank" rel="noopener">Sitepoint</a>
+		</p>
+
+		<h3>Project ideas from Jim</h3>
+		<blockquote>
+			<p>One of the things I'd recommend is taking a component built with one technology and trying to reimplement it yourself in another.</p>
+			<p>For example, there are a ton of lightbox widgets out there and for a beginner, this can seem like magic — you include the lib, add a couple of data attributes to some elements and voilà, you have lightbox functionality.</p>
+			<p><b>What I'd suggest is trying to roll your own (in this case) lightbox with vanilla JS.</b> It's really very simple and can give you a good idea of what this previously magic library is doing under the hood.</p>
+			<p>You can also look at implementing a React component in Vue.js, or an Ember component in Angular to learn more about how the respective frameworks approach the same problem.</p>
+			<p><b>I'd also highly recommend pulling apart common libraries,</b> as that is a great learning experience which will expose you to programming patterns and idioms in the real world.</p>
+			<p>A few years back I helped organize a <a href="https://www.sitepoint.com/community/t/javascript-challenge-convert-jquery-to-plain-javascript/30609#post5541688" target="_blank" rel="noopener">contest</a> on SitePoint in this vein and ended up taking an <a href="http://hibbard.eu/dom-selection-without-jquery/" target="_blank" rel="noopener">extended peek</a> beneath the hood of jQuery. That was very educational.</p>
+		</blockquote>
+
+		<h3>Commentary</h3>
+
+		<p>Here's what I like about Jim's approach:</p>
+
+		<ul>
+			<li>
+				<b>Deeper understanding</b>
+				<br>Implementing things in different ways helps give you a deeper understanding of the tools you use.
+			</li>
+
+			<li>
+				<b>Self-reliance</b>
+				<br>It's important to get comfortable enough that you don't need to rely on a plugin for everything.
+			</li>
+
+			<li>
+				<b>Better code performance</b>
+				<br>With practice, you'll be able to write the functionality you need without the extra baggage from a full plugin.  To be clear, there are times when it will make sense to use a tool or plugin, but it's important to understand when it makes sense.
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+	<div class="contentwidth stepbox">
+		<h2 id="soueidan">Sara Soueidan</h2>
+
+		<p class="bio">
+			Award-winning freelance <a href="http://sarasoueidan.com/" target="_blank" rel="noopener">front-end developer</a>, writer at <a href="http://tympanus.net/codrops/author/sarasoueidan/" target="_blank" rel="noopener">Codrops</a>, and <a href="https://sarasoueidan.com/speaking/" target="_blank" rel="noopener">speaker</a>
+		</p>
+
+		<h3>Project ideas from Sara</h3>
+		<blockquote>
+			<p>My advice can be summarized as follows:</p>
+			<ol>
+				<li>Start something today, and don't wait till you've mastered all skills before you start, because given the pace at which our industry progresses, this may mean that you'll never do.</li>
+				<li>Share what you learn. You get better at what you do when you help other people understand it because it forces you to understand it well yourself before you can help others do it.</li>
+				<li>Break down other people's code, and break it. You'll be surprised at how much insight and lessons you can learn from doing this.</li>
+				<li>Learn the basics—HTML5, SVG, CSS and plain JavaScript; the rest follows as you need it.</li>
+				<li>Be persistent, and don't let yourself get overwhelmed. Only learn the stuff that you need, when you need it.</li>
+			</ol>
+		</blockquote>
+
+		<h3>Commentary</h3>
+
+		<p>If you're looking for other people's code to play with, <a href="http://tympanus.net/codrops/" target="_blank" rel="noopener">Codrops</a> and <a href="http://codepen.io/" target="_blank" rel="noopener">Codepen</a> are great places to start.</p>
+
+		<p>Here's what I like about Sara's advice:</p>
+
+		<ul>
+			<li>
+				<b>It deals with the psychology of learning.</b>
+				<br>I like this answer's emphasis on starting today and focusing on only a few things at a time.  This approach is a great way to make progress quickly.
+			</li>
+
+			<li>
+				<b>Teaching what you learn has several benefits.</b>
+				<br>Not only is it a great way to understand and remember, it's also impressive to potential employers and clients.  It gives you credibility both in knowledge and communication.  It can also help you practice communicating an idea, which can be as important as the idea itself.
+			</li>
+
+			<li>
+				<b>Seeing other people's code makes you better.</b>
+				<br>Playing with other people's code is a quick way to expose yourself to techniques and ideas you might not have thought of on your own.  If you apply this consistently, you can absorb years of experience and level up quickly.
+			</li>
+		</ul>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="contentwidth stepbox">
+		<h2 id="moss">Benjie Moss</h2>
+
+		<p class="bio">
+			Editor at <a href="http://www.webdesignerdepot.com/author/Ben-Moss/" target="_blank" rel="noopener">Webdesigner Depot</a>
+		</p>
+
+		<h3>Project ideas from Benjie</h3>
+		<blockquote>
+			<p>Being a good developer is about solving problems in the most efficient way possible. There are thousands of tools available to you, knowing which one to use means understanding their strengths and weaknesses.</p>
+			<p>The best way I have found to understand *why* a language solves the problems it does, is to deliberately exclude it from my workflow.</p>
+			<p>Start by selecting a common project, building a sliding drawer navigation for example. The best way to accomplish that is with JavaScript, so build it using anything but JavaScript, pure CSS for example. In doing so you’ll learn *why* JavaScript is a better choice than CSS for that project (it has better event detection).</p>
+			<p>By building projects with artificial restrictions you’ll accomplish several things: you’ll explore lesser-known aspects of secondary tools, broadening your knowledge; you’ll learn to think outside the confines of any one solution when solving problems; you’ll deepen your understanding, not just of *how* a language does something, but *why* it does it.</p>
+			<p>You can repeat this process with anything you want to learn: animate an SVG chart without using GSAP; load, parse, and write XML data into the DOM without using jQuery; layout a responsive UI without using Flexbox.</p>
+			<p>You’ll end up with a deeper understanding of your toolset and a broader foundation on which to build your knowledge.</p>
+		</blockquote>
+
+		<h3>Commentary</h3>
+
+		<p>What I like about Benjie's answer:</p>
+		<ul>
+
+			<li>
+				You'll learn to think for yourself.
+				It's too easy to end up using certain tools because someone told you to, but if you try to accomplish things without the tools, you understand when they make sense and also when they don't.
+			</li>
+
+			<li>
+				In web development, it's so important to learn to make informed decisions so that your sites and web apps will have performance, maintainability, and more.  You'll also start to feel more confident in your work.
+			</li>
+		</ul>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="contentwidth stepbox">
+		<h2 id="bradford">Laurence Bradford</h2>
+		<p class="bio">
+			Founder at <a href="http://learntocodewith.me/" target="_blank" rel="noopener">Learn to Code With Me</a>; Also offers free <a href="http://learntocodewith.me/free-portfolio-course/" target="_blank" rel="noopener">portfolio course</a>
+		</p>
+		<h3>Project ideas from Laurence</h3>
+		<blockquote>
+			<p>As far as project ideas go, a person can create a simple quiz using HTML, CSS, and JavaScript.</p>
+			<p>Here's a jQuery plugin a person can use to get started from: <a href="https://github.com/jewlofthelotus/SlickQuiz" target="_blank" rel="noopener">https://github.com/jewlofthelotus/SlickQuiz</a></p>
+			<p>I like quizzes because they're fun! It allows a person to show their personality. Plus, if a person makes it funny/useful, it's something other people can use. It may even have the potential to help others.</p>
+		</blockquote>
+		<h3>Commentary</h3>
+		<p>What I like about Laurence's answer:</p>
+		<ul>
+			<li>
+				<b>Importance of fun and usefulness</b>
+				<br>It's too easy to focus on dry information without taking the time to make it fun and potentially useful.  Enjoyment is an important part of motivation, and it can often make all the difference in your success.
+			</li>
+			<li>
+				<b>Social aspect as motivation</b>
+				<br>When learning to code, one of the most satisfying feelings is to show your creations to someone and say "I made that."  The social aspect of having other people see your work can help keep you accountable for your progress.  As an added bonus, when people try your code creations, you start to learn things about user experience.
+			</li>
+			<li>
+				<b>Collaboration skills</b>
+				<br>I talk a lot about the importance of not depending on plugins, but at the same time, it's important to know how to use them.  In a team, you won't be the only one working on a codebase, so it's vital to be able to work with other people's code and tools.
+			</li>
+		</ul>
+	</div>
+	<div class="contentwidth stepbox">
+		<h2 id="phinney">Parker Phinney</h2>
+		<p class="bio">
+			Founder at <a href="https://www.interviewcake.com/" target="_blank" rel="noopener">Interview Cake</a>
+		</p>
+		<h3>Project ideas from Parker</h3>
+		<blockquote>
+			<p>Write a javascript bookmarklet that manipulates /other/ websites in an interesting and helpful way. Some ideas:</p>
+			<ul>
+				<li>Remove the feed from Facebook so it's less distracting.</li>
+				<li>Re-style the Google search results page to be in "night mode" so it's easier on the eyes.</li>
+				<li>Filter all emails from today out of your gmail inbox, so your day's focus isn't as easily pulled into new things.</li>
+			</ul>
+			<p>Great way to practice JavaScript and DOM manipulation. And hopefully it makes you feel slightly subversive and powerful--that's key to getting hooked on coding in the early days.</p>
+		</blockquote>
+		<h3>Commentary</h3>
+		<p>What I like about Parker's answer:</p>
+		<ul>
+			<li>
+				<b>The practicality</b>
+				<br>When you create something practical, you learn, you stay motivated, and you end up with something you can use.  You also get something good for your portfolio.
+			</li>
+			<li>
+				<b>The psychological effect</b>
+				<br>When learning to code, it's so important to do things that help you enjoy and appreciate these new powers you have.  You tend to progress much faster when you're enjoying something.
+			</li>
+		</ul>
+	</div>
+	<div class="contentwidth stepbox">
+		<h2 id="liew">Zell Liew</h2>
+
+		<p class="bio">
+			Front-end developer and founder at <a href="https://zellwk.com/" target="_blank" rel="noopener">ZellWK.com</a>
+		</p>
+
+		<h3>Project ideas from Zell</h3>
+		<blockquote>
+			<ul>
+				<li>Focus on getting the fundamentals right. Everything becomes so much easier afterwards.</li>
+				<li>Learn and teach. Repeat the process. You'll learn clearer and faster.</li>
+			</ul>
+		</blockquote>
+
+		<h3>Commentary</h3>
+
+		<p>What I like about Zell's answer:</p>
+		<ul>
+			<li>It's too easy to jump into projects first without taking the time to understand some of the fundamentals.  That can lead to difficulties, so it's important to get the fundamentals first.</li>
+			<li>Also, here's another vote for teaching what you've learned as a way of solidifying your understanding and communication.</li>
+		</ul>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+</div></section>
+
+
+
+<div class="contentwidth signupsection">
+	<div class="enjoyedthis">
+		<!-- My Gift to You -->
+		If you're curious to know a fast way to learn JavaScript...
+	</div>
+
+	<div>
+		<a href="https://simplestepscode.com/learn-javascript/" target="_blank" class="signupbutton">Click here to get the free guide to do real things with JavaScript as soon as possible</a>
+	</div>
+
+</div>
+
+
+<div class="copyright">
+	Copyright &copy; <span id="copyyear"></span> Simple Steps Code
+</div>
+
+
+
+<script>
+var yb = { id : function(str){return document.getElementById(str)} };
+
+yb.id('copyyear').innerHTML = new Date().getFullYear();
+
+// add hidden data to email forms
+function fill_form_data(css_class, input){
+	var class_string = '.' + css_class;
+	var items = document.querySelectorAll(class_string);
+	for(var i=0; i<items.length; i++){
+		items[i].value = input;
+	}
+}
+var fields_to_fill = [
+	['mce_URL', window.location.href]
+	,['mce_PATH', window.location.pathname]
+	,['mce_REFERRER', document.referrer || 'direct' ]
+];
+for(var i=0; i<fields_to_fill.length; i++){
+	var css_class = fields_to_fill[i][0];
+	var form_input = fields_to_fill[i][1];
+	fill_form_data(css_class, form_input);
+}
+
+// open and close main nav
+yb.id('hamburger').onclick = function(){
+	yb.id('topnav').className = yb.id('topnav').className=='open' ? 'closed' : 'open';
+};
+
+
+</script>
+
+
+<script>
+//**********************************************************
+//
+// ALLOW NORMAL INDENTING IN CODE SAMPLES
+//
+//**********************************************************
+(function(){
+	var pres = document.getElementsByTagName('pre');
+	for(var i=0; i<pres.length; i++){
+		
+		// get code elements from pre tags (ignore standalone code elements)
+		var code = pres[i].getElementsByTagName('code')[0];
+		var output = code.innerHTML;
+
+		// remove extra tabs (so you can indent normally in code samples)
+		var tabs = output.match(/^\n*(\t+)/);
+		if(tabs){
+
+			// count beginning tabs (to get base level of indentation)
+			var n = tabs[1].length;
+			
+			// remove that number of beginning tabs from each line
+			var reg = RegExp('^\t{'+n+'}','gm');
+			output = output.replace(reg,'');
+		}
+
+		// trim beginning and end of code sample
+		output = output.replace(/^\n+|\s+$/g,'');
+
+		// show clean output in code samples
+		code.innerHTML = output;
+	};
+})();
+</script>
+<script src="/code_formatting/prism.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-22685293-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- TOP OPT-IN BAR SCRIPT - commented out for now -->
+<!--
+<script>
+if(!window.location.pathname.match(/how-to-get-a-web-development-job-in-four-steps/i)){
+setTimeout(function(){
+	var transform_prefixes = ['msTransform','webkitTransform','transform'];
+	for(var i=0; i<transform_prefixes.length; i++){
+		document.getElementById('top_opt_in').style[transform_prefixes[i]] = 'translateY(0px)';
+	}
+	document.getElementById('menubar').className = 'top_promo';
+},2000);
+}
+</script>
+-->
+</body>
+</html>
