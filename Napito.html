@@ -145,7 +145,7 @@
 			ass.style["box-shadow"]="0 0 1em rgba(0,0,0,0.5), 0 0 17em rgba(0,0,0,0.5) ";
 			ass.style.background="linear-gradient(to left,#E80C30,#FF760D,#0014FF)";
 			var answer=document.getElementById("rr");
-			ans=Math.floor(+eval(answer.value));
+			ans=eval(answer.value);
 			if(!ans){
 				ass.style.textAlign="right";
 			    ass.value="Error !";}
